@@ -1,8 +1,6 @@
-// scroll reveal
-scrollReveal({
-    // reset:true,
-    distance:'80px',
-    duration:2000,
-    delay:200
-});
-scrollReveal().reveal('.Home_Content,.heading',{origin: 'top' });
+function pres(){
+    document.querySelector('.side_bar').classList.toggle('show')
+}
+function cls(){
+    document.querySelector('.side_bar').classList.toggle('show')
+}

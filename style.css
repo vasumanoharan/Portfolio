@@ -60,18 +60,24 @@ body {
     background-color: var(--main-color);
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 40px;
     font-size: medium;
+    margin-left: 100%;
     color: var(--text-color);
-    margin-left: 4 rem;
-    transition: .3s ;
-    padding: 20px;
-    position: absolute;
-    top: 5px;
-    right: 0;
-    width: 400px;
+    /* padding: 10px; */
+    padding: 0%;
+    transition: 2s;
+    position: fixed;
+    top: 0px;
+    width: 300px;
     text-align: center;
-    height: 600px;
+    height: 100%
+    
+
+}
+.show{
+    margin-left: 40%;
+    transition: 1s;
 }
 .side_bar i{
     display: flex;
@@ -79,6 +85,7 @@ body {
 }
 .header i{
     display: none;
+    cursor: pointer;
 }
 section {
     min-height: 100vh;
