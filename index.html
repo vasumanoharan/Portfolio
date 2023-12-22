@@ -16,9 +16,15 @@
 <body>
     <!-- Navbar design -->
     <header class="header">
-        <a href="" class="logo">Vasu.</a>
+        <div class="logo">
+            <a href="" class="logo">Vasu.</a>
+            <i class="fa-solid fa-sun" id="sun" onclick="sun()"></i>
+            <i class="fa-solid fa-moon"></i>
+        </div>
 
-        <i class="fa-solid fa-bars" onclick="pres()"></i>
+
+
+        <i class="fa-solid fa-bars" onclick="pres()" id="slide_nav"></i>
         <nav class="navbar">
             <box-icon name='child'></box-icon>
             <box-icon name='child'></box-icon>
@@ -30,9 +36,9 @@
             <a href="#Project">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
-        <div class="side_bar" >
-            
-            
+        <div class="side_bar">
+
+
             <div>
                 <h2 style="margin-left: 60px;cursor: pointer;" onclick="cls()">X</h2>
             </div>
@@ -61,7 +67,8 @@
 
             </div>
             <div style="display: flex;gap: 20px;">
-                <a href="./resume/Professional Resume Web Developer_20231130_144549_0000 (1).pdf" class="btn">Download CV</a>
+                <a href="./resume/Professional Resume Web Developer_20231130_144549_0000 (1).pdf" class="btn">Download
+                    CV</a>
                 <a href="#contact" class="btn">Get in Touch</a>
             </div>
 
@@ -74,7 +81,8 @@
     <!-- About section design -->
     <section class="about" id="about">
         <div class="about_img">
-            <img src=".//Images/vasu_photo.jpeg" alt="" width="200px" style="border-radius: 50%;border: 8px solid #0ef;">
+            <img src=".//Images/vasu_photo.jpeg" alt="" width="200px"
+                style="border-radius: 50%;border: 8px solid #0ef;">
         </div>
         <div class="about_content">
             <h2 class="heading">About <span style="color: #0ef;">Me</span></h2>
@@ -223,7 +231,7 @@
     <!-- Education -->
     <section id="Education" class="Education">
         <h2>Education</h2>
-        
+
         <div class="edu_sslc">
             <div style="display: flex;justify-content: space-around;padding: 20px;">
                 <h3 style="font-size: 24px;margin-bottom: 20px;">Higer Secondary </h3>
@@ -233,19 +241,27 @@
 
                 <tr>
                     <td><i class="fa-solid fa-school"></i></td>
-                    <td><h3 style="font-size: 24px;">Vidyaa Vikas Matric School</h3></td>
+                    <td>
+                        <h3 style="font-size: 24px;">Vidyaa Vikas Matric School</h3>
+                    </td>
                 </tr>
                 <tr>
                     <td> <i class="fa-solid fa-graduation-cap"></i></td>
-                    <td><h3 style="font-size: 24px;">2013-2015</h3></td>
+                    <td>
+                        <h3 style="font-size: 24px;">2013-2015</h3>
+                    </td>
                 </tr>
                 <tr>
                     <td><i class="fa-solid fa-award"></i> </td>
-                    <td><h3 style="font-size: 24px;">84%</h3></td>
+                    <td>
+                        <h3 style="font-size: 24px;">84%</h3>
+                    </td>
                 </tr>
                 <tr>
                     <td><i class="fa-solid fa-location-dot"></i></td>
-                    <td><h3 style="font-size: 24px;">Gandarvakkottai,Thanjavur.</h3></td>
+                    <td>
+                        <h3 style="font-size: 24px;">Gandarvakkottai,Thanjavur.</h3>
+                    </td>
                 </tr>
             </table>
         </div>
@@ -258,19 +274,27 @@
 
                 <tr>
                     <td><i class="fa-solid fa-school"></i></td>
-                    <td><h3 style="font-size: 24px;">Anna University-Tiruchirapalli</h3></td>
+                    <td>
+                        <h3 style="font-size: 24px;">Anna University-Tiruchirapalli</h3>
+                    </td>
                 </tr>
                 <tr>
                     <td> <i class="fa-solid fa-graduation-cap"></i></td>
-                    <td><h3 style="font-size: 24px;">2015-2019</h3></td>
+                    <td>
+                        <h3 style="font-size: 24px;">2015-2019</h3>
+                    </td>
                 </tr>
                 <tr>
                     <td><i class="fa-solid fa-award"></i> </td>
-                    <td><h3 style="font-size: 24px;">63%</h3></td>
+                    <td>
+                        <h3 style="font-size: 24px;">63%</h3>
+                    </td>
                 </tr>
                 <tr>
                     <td><i class="fa-solid fa-location-dot"></i></td>
-                    <td><h3 style="font-size: 24px;">Tiruchirapalli</h3></td>
+                    <td>
+                        <h3 style="font-size: 24px;">Tiruchirapalli</h3>
+                    </td>
                 </tr>
             </table>
         </div>
@@ -344,7 +368,8 @@
 
     <!-- Contacts -->
     <section class="contact" id="contact">
-        <h2 style="font-size: 32px;text-align: center;margin-bottom: 24px;">Contacts <span style="color: #0ef;">Me!</span></h2>
+        <h2 style="font-size: 32px;text-align: center;margin-bottom: 24px;">Contacts <span
+                style="color: #0ef;">Me!</span></h2>
         <div class="con_tab">
             <div style="display: flex;gap: 50px;padding: 20px;justify-content: center;">
                 <i class="fa-solid fa-envelope"></i>
@@ -359,7 +384,7 @@
                 <h3>+91 9688579145</h3>
             </div>
         </div>
-        
+
         <form action="#">
             <div class="input_box">
                 <input type="text" placeholder="Name">
@@ -373,18 +398,18 @@
             <button class="btn">Send Message</button>
         </form>
     </section>
-<!-- footer design -->
-<footer class="footer">
-    <div class="footer_text">
-        <p>Copyright &copy;2023 by Vasu Manoharan | All Rights are Reserved</p>
-    </div>
-    <div class="footer_icon">
-        <a href="#Home"><i class="fa-solid fa-up-long"></i></a>
-    </div>
-    <br>
-</footer>
-<script src="https://unpkg.com/scrollreveal"></script>
-<script src="./index.js"></script>
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer_text">
+            <p>Copyright &copy;2023 by Vasu Manoharan | All Rights are Reserved</p>
+        </div>
+        <div class="footer_icon">
+            <a href="#Home"><i class="fa-solid fa-up-long"></i></a>
+        </div>
+        <br>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>

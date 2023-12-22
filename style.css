@@ -21,6 +21,27 @@ html {
 body {
     background: var(--bg-color);
     color: var(--text-color);
+    transition: 2s;
+}
+.logo{
+    height: 32px;
+    width: 32px;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    
+}
+.shower{
+    background-color: #AC87C5;
+    color:white;
+    transition-duration: 2s;
+
+    
+}
+.logo i{
+    cursor: pointer;
+    width: 32px;
+    display: flex;
 }
 .header {
     position: fixed;
@@ -83,7 +104,7 @@ body {
     display: flex;
     color: white;
 }
-.header i{
+#slide_nav{
     display: none;
     cursor: pointer;
 }
@@ -159,7 +180,7 @@ section {
     /* position: relative;
     top: -300px; */
     gap: 50px;
-    background-color: var(--second-bg-color);
+    /* background-color: var(--second-bg-color); */
     /* height: 100px; */
     padding: 80px;
 }
@@ -223,7 +244,7 @@ section {
     transform: scale(1.02);
 }
 .Experience{
-    background-color: var(--second-bg-color);
+    /* background-color: var(--second-bg-color); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -289,7 +310,7 @@ section {
     box-shadow: 0 0 1rem var(--main-color);
 }
 .edu_sslc{
-    background-color: var(--second-bg-color);
+    /* background-color: var(--second-bg-color); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -335,7 +356,7 @@ section {
     padding: 60px 0 0 0;
 }
 .portfolio_container{
-    background-color: var(--second-bg-color);
+    /* background-color: var(--second-bg-color); */
     display: grid;
     grid-template-columns: repeat(3,1fr);
     align-items: center;
@@ -412,7 +433,7 @@ transition: 0.5s ease;
     padding: 24px;
     font-size: 24px;
     color: var(--text-color);
-    background: var(--second-bg-color);
+    /* background: var(--second-bg-color); */
     border-radius: 10px;
     margin-bottom: 10px;
 }
@@ -470,7 +491,7 @@ transition: 0.5s ease;
 
 }
 @media screen and (max-width:768px) {
-    .header i{
+    #slide_nav{
         display: flex;
     }
     .navbar{
