@@ -12,7 +12,7 @@
     --bg-color: black;
     --second-bg-color: black;
     --text-color: #fff;
-    --main-color: #EEE7DA;
+    --main-color: #3de1e4;
 }
 .changer{
     --bg-color: #00A9FF;
@@ -121,7 +121,7 @@ body {
     color: var(--text-color);
     /* padding: 10px; */
     padding: 0%;
-    transition: 2s;
+    transition: 1s;
     position: fixed;
     top: 0px;
     width: 300px;
@@ -132,7 +132,7 @@ body {
 }
 .show{
     margin-left: 40%;
-    transition: 1s;
+    /* transition: 1s; */
 }
 .side_bar i{
     display: flex;
@@ -517,6 +517,12 @@ transition: 0.5s ease;
     /* flex-wrap: wrap; */
     
 }
+.contact form{
+    padding: 20px;
+    background-color: thistle;
+    border-radius: 20px;
+}
+
 .con_tab:hover{
     color: #0ef;
 }
