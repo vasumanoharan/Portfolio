@@ -140,7 +140,7 @@ body {
     color: white;
 }
 #slide_nav{
-    /* display: none; */
+    display: none;
     cursor: pointer;
     text-align: center;
     align-items: center;
