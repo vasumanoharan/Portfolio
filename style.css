@@ -98,7 +98,8 @@ body {
 }
 .navbar{
     display: flex;
-    gap: 20px;
+    gap: 30px;
+    align-items: center;
 }
 .navbar a{
     font-size: medium;
@@ -139,8 +140,11 @@ body {
     color: white;
 }
 #slide_nav{
-    display: none;
+    /* display: none; */
     cursor: pointer;
+    text-align: center;
+    align-items: center;
+    font-size: large;
 }
 section {
     min-height: 100vh;
@@ -564,7 +568,7 @@ transition: 0.5s ease;
     #slide_nav{
         display: flex;
     }
-    .navbar{
+    .navbar a{
         display: none;
     }
     .Home{
