@@ -19,15 +19,16 @@
         <div class="logo">
             <a href="" class="logo">Vasu.</a>
             <i class="fa-solid fa-sun" id="sun" onclick="sun()"></i>
-            <i class="fa-solid fa-moon"></i>
+            <i class="fa-solid fa-moon" id="moon" onclick="moon()" style="display: none;"></i>
         </div>
 
 
 
-        <i class="fa-solid fa-bars" onclick="pres()" id="slide_nav"></i>
+        <i class="fa-solid fa-bars" onclick="pres()" id="slide_nav" ></i>
         <nav class="navbar">
-            <box-icon name='child'></box-icon>
-            <box-icon name='child'></box-icon>
+            <!-- <box-icon name='child'></box-icon>
+            <box-icon name='child'></box-icon> -->
+
             <a href="#Home">Home</a>
             <a href="#about">About</a>
             <a href="#Skills">Skills</a>
@@ -56,7 +57,11 @@
         <div class="Home_content">
             <h3>Hello, It's Me</h3>
             <h1>Vasu Manoharan</h1>
-            <h3>And I'm a <span style="color: #0ef;">Web Developer</span></h3>
+            <h3>And I'm a
+                <span class="text second-text"></span>
+
+            </h3>
+
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium perferendis dignissimos sunt
                 voluptatum nostrum officiis voluptatibus reprehenderit excepturi consectetur possimus voluptatem,
                 reiciendis tempora ea eum tempore? Beatae ex libero explicabo.</p>
@@ -74,7 +79,7 @@
 
         </div>
         <div class="Home_img">
-            <img src="./Images/vasu_photo.jpeg" alt="" width="220px">
+            <img src="./Images/vasu_photo.jpeg" alt="" width="100px">
         </div>
     </section>
 
@@ -229,12 +234,12 @@
         </div>
     </section>
     <!-- Education -->
-    <section id="Education" class="Education">
-        <h2>Education</h2>
 
+    <h2 style="text-align: center; font-size: 32px;margin-top: 20px;margin-bottom: 10px;">Education</h2>
+    <section id="Education" class="Education">
         <div class="edu_sslc">
-            <div style="display: flex;justify-content: space-around;padding: 20px;">
-                <h3 style="font-size: 24px;margin-bottom: 20px;">Higer Secondary </h3>
+            <div>
+                <h3>Higer Secondary </h3>
                 <!-- <i class="fa-solid fa-caret-up"></i> -->
             </div>
             <table class="edu_tab">
@@ -266,7 +271,7 @@
             </table>
         </div>
         <div class="edu_sslc">
-            <div style="display: flex;justify-content: space-around;padding: 20px;">
+            <div style="display: flex;justify-content: center;padding: 20px;">
                 <h3 style="font-size: 24px;margin-bottom: 20px;">Bachaelor of Engineering</h3>
                 <!-- <i class="fa-solid fa-caret-up"></i> -->
             </div>
@@ -275,7 +280,7 @@
                 <tr>
                     <td><i class="fa-solid fa-school"></i></td>
                     <td>
-                        <h3 style="font-size: 24px;">Anna University-Tiruchirapalli</h3>
+                        <h3 style="font-size: 24px;" id="ft">Anna University-Trichy</h3>
                     </td>
                 </tr>
                 <tr>

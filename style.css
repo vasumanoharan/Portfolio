@@ -9,10 +9,16 @@
     scroll-behavior: smooth;
 }
 :root {
-    --bg-color: #1f242d;
-    --second-bg-color: #323946;
+    --bg-color: black;
+    --second-bg-color: black;
     --text-color: #fff;
-    --main-color: #0ef;
+    --main-color: #EEE7DA;
+}
+.changer{
+    --bg-color: #00A9FF;
+    --second-bg-color: #A0E9FF;
+    --text-color: #fff;
+    --main-color: #00A9FF;
 }
 html {
     font-size: 62.5%;
@@ -37,6 +43,34 @@ body {
     transition-duration: 2s;
 
     
+}
+.text{
+   color: #0ef;
+   font-size: 30px;
+   position: relative;
+   font-weight: 600;
+}
+.Home .text.first-text{
+
+}
+.text.second-text:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--bg-color);
+    border-left: 2px solid #0ef;
+    animation: animate 4s steps(12) infinite ;
+}
+@keyframes animate{
+    40%,60%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
 }
 .logo i{
     cursor: pointer;
@@ -112,11 +146,13 @@ section {
     min-height: 100vh;
     padding: 10rem 9% 2;
 }
+
 .Home{
     display: flex;
    text-align: left;
    justify-content: center;
    align-items: center;
+   gap: 100px;
     padding: 80px;
     /* position: relative;
     top: -80px; */
@@ -136,8 +172,8 @@ section {
     font-size: 12px;
 }
 .Home_img img{
-    border-radius: 50%;
-    border: 8px solid #0ef;
+    /* border-radius: 50%; */
+    border: 4px solid #0ef;
 }
 .social_media a{
     display: inline-flex;
@@ -180,7 +216,7 @@ section {
     /* position: relative;
     top: -300px; */
     gap: 50px;
-    /* background-color: var(--second-bg-color); */
+    background-color: var(--second-bg-color);
     /* height: 100px; */
     padding: 80px;
 }
@@ -204,8 +240,8 @@ section {
 } */
 .services h2{
     /* margin-bottom: 10px; */
-    padding-left: 80px;
-    padding-top: 80px;
+    padding-left: 40px;
+    padding-top: 40px;
     padding-bottom: 40px;
     text-align: center;
     font-size: 32px;
@@ -215,6 +251,7 @@ section {
     justify-content: center;
     align-items: center;
     gap: 5px;
+    margin-top: -60px;
 }
 .services_box{
     flex: 1 1 30rem;
@@ -244,7 +281,7 @@ section {
     transform: scale(1.02);
 }
 .Experience{
-    /* background-color: var(--second-bg-color); */
+    background-color: var(--second-bg-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -256,6 +293,7 @@ section {
 .Experience h2{
     font-size: 32px;
     text-align: center;
+    margin: 40px;
 }
 .Experience i{
     width: 4rem;
@@ -309,8 +347,18 @@ section {
     color: var(--second-bg-color);
     box-shadow: 0 0 1rem var(--main-color);
 }
+.Education{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* position: relative;
+    left: 100px; */
+    /* flex-wrap: wrap; */
+}
 .edu_sslc{
-    /* background-color: var(--second-bg-color); */
+    background-color: var(--second-bg-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -321,24 +369,35 @@ section {
     margin: 10px 20px 20px 20px;
     transition: 0.5s ease;
     flex-wrap: wrap;
+    width: 80%;
+    /* text-align: justify; */
 }
 .edu_sslc:hover{
     border: 4px solid #0ef;
     transform: scale(1.02);
 }
+.edu_sslc{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.edu_sslc h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
 .edu_tab tr{
     display: flex;
-    justify-content: space-between;
-    gap: 200px;
+    justify-content: left;
+    gap: 20px;
     align-items: center;
     margin-bottom: 10px;
-    
-
+    text-align: center;
 
 }
-.edu_tab{
+.esu_sslc .edu_tab{
     position: relative;
     left: 60px;
+    width: 200px;
 }
 .edu_tab i{
     width: 4rem;
@@ -354,9 +413,11 @@ section {
     font-size: 32px;
     text-align: center;
     padding: 60px 0 0 0;
+    margin-top: -20px;
+    margin-bottom: 40px;
 }
 .portfolio_container{
-    /* background-color: var(--second-bg-color); */
+    background-color: var(--second-bg-color);
     display: grid;
     grid-template-columns: repeat(3,1fr);
     align-items: center;
@@ -422,6 +483,8 @@ transition: 0.5s ease;
     margin: 16px auto;
     text-align: center;
     margin-bottom: 48px;
+    background-color: var(--main-color);
+    color: var(--text-color);
 }
 .input_box{
     display: flex;
@@ -433,24 +496,25 @@ transition: 0.5s ease;
     padding: 24px;
     font-size: 24px;
     color: var(--text-color);
-    /* background: var(--second-bg-color); */
+    background: var(--second-bg-color);
     border-radius: 10px;
     margin-bottom: 10px;
 }
 .contact .con_tab{
-    width: 800px;
+    width: fit-content;
     font-size: 24px;
-    color: #fff;
+    color: var(--text-color);
     border-radius: 10px;
     background: var(--second-bg-color);
-    display: grid;
+    display: flex;
+    flex-direction: column;
     margin: 16px auto;
-    /* justify-content: center;
-    align-items: center; */
+    justify-content: center;
+    align-items: center;
     text-align: center;
     
     transition: 0.8s ease;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     
 }
 .con_tab:hover{
@@ -533,10 +597,59 @@ transition: 0.5s ease;
     position: relative;
     left: -50px;
    }
+   .edu_sslc{
+        font-size: 16px;
+        
+   }
    .con_tab{
     display: flex;
     justify-content: start;
    }
+   .edu_tab i{
+    display: none;
+   }
+   
+   .edu_tab{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        
+   }
+   .edu_tab h3{
+    font-size: 8px;
+    text-align: center;
+    padding-left: 40px;
+   }
+   .contact{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        padding: 10px;
+        
+   }
+   .con_tab h3{
+        
+        font-size: 16px;
+        
+   }
+   .contact .con_tab{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+       
+   }
+   .footer{
+    font-size: small;
+    display: flex;
+    width: fit-content;
+   }
+   .footer p{
+    font-size: 16px;
+   }
+
 }
 
     
