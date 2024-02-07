@@ -99,12 +99,13 @@ body {
 .navbar{
     display: flex;
     gap: 30px;
-    align-items: center;
+    align-items: left;
+    /* margin-left: -2000px; */
 }
 .navbar a{
     font-size: medium;
     color: var(--text-color);
-    margin-left: 4 rem;
+    margin-left: 20px;
     transition: .3s ;
 
 }
@@ -121,12 +122,12 @@ body {
     margin-left: 100%;
     color: var(--text-color);
     /* padding: 10px; */
-    padding: 0%;
+    padding-left: 60px;
     transition: 1s;
     position: fixed;
     top: 0px;
     width: 300px;
-    text-align: center;
+    text-align: left;
     height: 100%
     
 
@@ -267,8 +268,12 @@ section {
     justify-content: space-around;
     align-items: center;
     margin: 20px;
-    transition: 0.5s ease;
+    
+    transform-style: flat;
+  transition: transform 1s ease;
+
 }
+
 .services_box h3{
     font-size: 24px;
     padding: 10px;
@@ -282,7 +287,11 @@ section {
 }
 .services_container .services_box:hover{
     border-color:var(--main-color);
-    transform: scale(1.02);
+    /* transform: scale(1.02); */
+    transform: rotateY(180deg);
+    /* transform: rotateY(0deg); */
+
+
 }
 .Experience{
     background-color: var(--second-bg-color);
@@ -293,6 +302,8 @@ section {
     text-align: center;
     /* gap: 5px; */
     /* border-radius: 20px; */
+    transform: translateX(100%);
+    transition: opacity 1s, transform 1s;
 }
 .Experience h2{
     font-size: 32px;
@@ -427,6 +438,8 @@ section {
     align-items: center;
     gap: 2.5rem;
     padding: 20px 10px 0 10px;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 1s;
 }
 .portfolio-box{
     position: relative;
@@ -564,6 +577,87 @@ transition: 0.5s ease;
     color: var(--second-bg-color);
 
 }
+
+/* Education */
+/* .Education{
+    transform: translateX(100%);
+    transition: opacity 1s, transform 1s;
+} */
+.Edun{
+    font-size: 32px;
+    text-align: center;
+    margin: 40px;
+}
+.Edu__details{
+    transform: translateX(180%);
+    transition: opacity 1s, transform 1s;
+}
+.edu__head{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: inherit;
+    flex-direction: column;
+    border-radius: 20px;
+    font-size: 16px;
+    flex-basis: auto;
+    scroll-behavior: smooth;
+
+    
+}
+.edu__head:hover{
+    border: 4px solid #0ef;
+    transform: scale(1.02);
+    transition: ease-in-out 1s;
+}
+.edu__ss{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 300px;
+    margin-top: 20px;
+}
+.edu_s1{
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+    margin-left: 150px;
+    /* justify-content: center; */
+   
+    text-align: center;
+    
+}
+.edu_h{
+    display: none;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+
+  /* image animation */
+  .about_img{
+    transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+  }
+  .about_img:hover{
+    transform: rotateY(180deg);
+  }
+
+  .Home_img{
+    transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+  }
+  .Home_img:hover{
+    transform: rotateY(180deg);
+  }
+
+
 @media screen and (max-width:768px) {
     #slide_nav{
         display: flex;
@@ -659,7 +753,16 @@ transition: 0.5s ease;
    .footer p{
     font-size: 16px;
    }
-
+   .edu__head{
+    font-size: 12px;
+    
+   }
+   .edu__ss{
+    gap: 100px;
+   }
+   .edu_s1{
+    margin-left: 100px;
+   }
 }
 
     

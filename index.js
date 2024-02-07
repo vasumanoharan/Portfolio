@@ -42,3 +42,70 @@ const load=()=>{
     
 }
 load();
+
+
+function arrow(){
+    document.querySelector('.edu_s2').classList.toggle('edu_h')
+}
+
+function arwone(){
+    document.querySelector('.edu_s3').classList.toggle('edu_h')
+}
+
+
+// scroll behaviour
+document.addEventListener('DOMContentLoaded', () => {
+    const animatedElement = document.getElementById('Experience');
+  
+    function handleScroll() {
+      const scrollPosition = window.scrollY + window.innerHeight;
+      const elementPosition = animatedElement.offsetTop;
+  
+      if (scrollPosition > elementPosition) {
+        animatedElement.classList.toggle('visible');
+      } 
+    }
+  
+    window.addEventListener('scroll', handleScroll);
+  
+    // Optionally, you can use the Intersection Observer API for a more efficient solution.
+    // See: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+  });
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const animatedElement = document.querySelector('.Edu__details');
+  
+    function handleScroll() {
+      const scrollPosition = window.scrollY + window.innerHeight;
+      const elementPosition = animatedElement.offsetTop;
+  
+      if (scrollPosition > elementPosition) {
+        animatedElement.classList.toggle('visible');
+      } 
+    }
+  
+    window.addEventListener('scroll', handleScroll);
+  
+    // Optionally, you can use the Intersection Observer API for a more efficient solution.
+    // See: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+  });
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const animatedElement = document.querySelector('.portfolio_container');
+  
+    function handleScroll() {
+      const scrollPosition = window.scrollY + window.innerHeight;
+      const elementPosition = animatedElement.offsetTop;
+  
+      if (scrollPosition > elementPosition) {
+        animatedElement.classList.toggle('visible');
+      } 
+    }
+  
+    window.addEventListener('scroll', handleScroll);
+  
+    // Optionally, you can use the Intersection Observer API for a more efficient solution.
+    // See: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+  });
