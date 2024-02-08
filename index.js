@@ -4,6 +4,11 @@ function pres(){
 function cls(){
     document.querySelector('.side_bar').classList.toggle('show')
 }
+function hr(){
+    document.querySelector('.side_bar').classList.remove('show')
+}
+
+
 function sun(){
     var r=document.querySelector(':root')
     var rs = getComputedStyle(r);
