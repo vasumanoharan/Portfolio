@@ -269,7 +269,7 @@ section {
     align-items: center;
     margin: 20px;
     
-    transform-style: flat;
+    /* transform-style: flat; */
   transition: transform 1s ease;
 
 }
