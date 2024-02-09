@@ -302,8 +302,8 @@ section {
     text-align: center;
     /* gap: 5px; */
     /* border-radius: 20px; */
-    transform: translateX(-80%);
-    transition: opacity 2s, transform 1s;
+    transform: translateX(80%);
+    transition: opacity 2s, transform 2s;
     scroll-behavior: smooth;
 }
 .Experience h2{
@@ -439,8 +439,8 @@ section {
     align-items: center;
     gap: 2.5rem;
     padding: 20px 10px 0 10px;
-    transform: translateX(-70%);
-    transition: opacity 1s, transform 1s;
+    transform: translateX(100%);
+    transition: opacity 1s, transform 5s;
 }
 .portfolio-box{
     position: relative;
@@ -534,11 +534,14 @@ transition: 0.5s ease;
     transition: 0.8s ease;
     /* flex-wrap: wrap; */
     
+    
 }
 .contact form{
     padding: 20px;
     background-color: thistle;
     border-radius: 20px;
+    /* transform: translateX(-100%);
+    transition: opacity 1s, transform 1s; */
 }
 
 .con_tab:hover{
@@ -591,7 +594,7 @@ transition: 0.5s ease;
 }
 .Edu__details{
     transform: translateX(-100%);
-    transition: opacity 1s, transform 1s;
+    transition: opacity 1s, transform 2s;
     scroll-behavior: smooth;
 }
 .edu__head{
@@ -658,6 +661,8 @@ transition: 0.5s ease;
   .Home_img:hover{
     transform: rotateY(180deg);
   }
+
+
 
 
 @media screen and (max-width:768px) {

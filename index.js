@@ -5,7 +5,7 @@ function cls(){
     document.querySelector('.side_bar').classList.toggle('show')
 }
 function hr(){
-    document.querySelector('.side_bar').classList.remove('show')
+    document.querySelector('.side_bar').classList.toggle('show')
 }
 
 
@@ -67,8 +67,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const elementPosition = animatedElement.offsetTop;
   
       if (scrollPosition > elementPosition) {
-        animatedElement.classList.toggle('visible');
-      } 
+        animatedElement.classList.add('visible');
+      }
+      else{
+        animatedElement.classList.remove('visible')
+      }
     }
   
     window.addEventListener('scroll', handleScroll);
@@ -86,8 +89,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const elementPosition = animatedElement.offsetTop;
   
       if (scrollPosition > elementPosition) {
-        animatedElement.classList.toggle('visible');
-      } 
+        animatedElement.classList.add('visible');
+      }
+      else{
+        animatedElement.classList.remove('visible')
+      }
     }
   
     window.addEventListener('scroll', handleScroll);
@@ -105,8 +111,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const elementPosition = animatedElement.offsetTop;
   
       if (scrollPosition > elementPosition) {
-        animatedElement.classList.toggle('visible');
-      } 
+        animatedElement.classList.add('visible');
+      }
+      else{
+        animatedElement.classList.remove('visible')
+      }
     }
   
     window.addEventListener('scroll', handleScroll);
@@ -114,3 +123,30 @@ document.addEventListener('DOMContentLoaded', () => {
     // Optionally, you can use the Intersection Observer API for a more efficient solution.
     // See: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
   });
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const animatedElement = document.getElementById('form1');
+  
+    function handleScroll() {
+      const scrollPosition = window.scrollY + window.innerHeight;
+      const elementPosition = animatedElement.offsetTop;
+  
+      if (scrollPosition > elementPosition) {
+        animatedElement.classList.add('visible');
+      }
+      else{
+        animatedElement.classList.remove('visible')
+      }
+    }
+  
+    window.addEventListener('scroll', handleScroll);
+  
+    // Optionally, you can use the Intersection Observer API for a more efficient solution.
+    // See: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+  });
+
+
+
+
+  
