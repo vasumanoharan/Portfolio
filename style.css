@@ -302,7 +302,7 @@ section {
     text-align: center;
     /* gap: 5px; */
     /* border-radius: 20px; */
-    transform: translateX(80%);
+    transform: translateX(-80%);
     transition: opacity 2s, transform 2s;
     scroll-behavior: smooth;
 }
@@ -439,7 +439,7 @@ section {
     align-items: center;
     gap: 2.5rem;
     padding: 20px 10px 0 10px;
-    transform: translateX(100%);
+    transform: translateX(-100%);
     transition: opacity 1s, transform 5s;
 }
 .portfolio-box{
@@ -584,8 +584,9 @@ transition: 0.5s ease;
 
 /* Education */
 /* .Education{
-    transform: translateX(100%);
+    transform: translateX(-100%);
     transition: opacity 1s, transform 1s;
+    scroll-behavior: smooth;
 } */
 .Edun{
     font-size: 32px;
@@ -662,7 +663,11 @@ transition: 0.5s ease;
     transform: rotateY(180deg);
   }
 
-
+  /* .eye{
+    transform: translateX(-80%);
+    transition: opacity 2s, transform 2s;
+    scroll-behavior: smooth;
+  } */
 
 
 @media screen and (max-width:768px) {

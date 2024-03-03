@@ -60,25 +60,47 @@ function arwone(){
 
 // scroll behaviour
 document.addEventListener('DOMContentLoaded', () => {
-    const animatedElement = document.getElementById('Experience');
-  
-    function handleScroll() {
-      const scrollPosition = window.scrollY + window.innerHeight;
-      const elementPosition = animatedElement.offsetTop;
-  
-      if (scrollPosition > elementPosition) {
-        animatedElement.classList.add('visible');
-      }
-      else{
-        animatedElement.classList.remove('visible')
-      }
+  const animatedElement = document.querySelector('#Experience');
+
+  function handleScroll() {
+    const scrollPosition = window.scrollY + window.innerHeight;
+    const elementPosition = animatedElement.offsetTop;
+
+    if (scrollPosition > elementPosition) {
+      animatedElement.classList.add('visible');
     }
-  
-    window.addEventListener('scroll', handleScroll);
-  
-    // Optionally, you can use the Intersection Observer API for a more efficient solution.
-    // See: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
-  });
+    else{
+      animatedElement.classList.remove('visible')
+    }
+  }
+
+  window.addEventListener('scroll', handleScroll);
+
+  // Optionally, you can use the Intersection Observer API for a more efficient solution.
+  // See: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+});
+
+// scroll behaviour
+document.addEventListener('DOMContentLoaded', () => {
+  const animatedElement = document.querySelector('.eye');
+
+  function handleScroll() {
+    const scrollPosition = window.scrollY + window.innerHeight;
+    const elementPosition = animatedElement.offsetTop;
+
+    if (scrollPosition > elementPosition) {
+      animatedElement.classList.add('visible');
+    }
+    else{
+      animatedElement.classList.remove('visible')
+    }
+  }
+
+  window.addEventListener('scroll', handleScroll);
+
+  // Optionally, you can use the Intersection Observer API for a more efficient solution.
+  // See: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+});
 
 
   document.addEventListener('DOMContentLoaded', () => {
